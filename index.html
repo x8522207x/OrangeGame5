@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-tw" style="min-height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="666" />
+    <meta property="og:image:height" content="364" />
+    <meta
+      property="og:title"
+      content="波拉西亞戰記｜第五隻混沌首領，白夜之王的復活傳說"
+    />
+    <meta
+      property="og:description"
+      content="白夜之王甦醒後的憤怒與悲傷，揭開克隆地區神秘圖騰獸的傳說。"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>波拉西亞戰記｜第五隻混沌首領，白夜之王的復活傳說</title>
+    <link
+      rel="mask-icon"
+      href="img/icon/safari-pinned-tab.svg"
+      color="#162c32"
+    />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Syne:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <script
+      type="text/javascript"
+      src="https://frontend.beanfun.com/plugins/game-footer/game-footer.js"
+      id="game-footer"
+      prod="波拉西亞"
+      theme="dark"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tw.beanfun.com/js/GA_CodeNew.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body style="height: 0; max-height: var(--maxvh); min-height: 100%">
+    <div
+      id="app"
+      style="
+        box-sizing: border-box;
+        max-height: var(--maxvh);
+        overflow-y: scroll;
+      "
+    >
+      <div id="plate_base">
+        <div class="scrollbar -none">
+          <div class="scrollbar_thumb">
+            <span></span>
+          </div>
+        </div>
+        <div class="cursor"></div>
+      </div>
+      <div id="plate_modal">
+        <div class="modal type--youtube">
+          <div
+            class="modal_dimmed"
+            style="background-color: rgba(0, 0, 0, 0.8)"
+          >
+            <div class="loading">
+              <div
+                class="spinner_wave_dots"
+                style="--42f2e9e9: rgba(100, 100, 100, 1)"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal_wrap"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate(0px, 0px);
+            "
+          >
+            <div class="modal_inner">
+              <div class="modal_box">
+                <div class="modal_box_theme"></div>
+                <div class="modal_box_veil">
+                  <div
+                    class="spinner_wave_dots"
+                    style="--42f2e9e9: rgba(100, 100, 100, 1)"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="modal_source">
+                  <span
+                    class="modal_source_ratio"
+                    style="padding-top: 56.4945%"
+                  >
+                  </span>
+                </div>
+              </div>
+              <button class="modal_close">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="toast_area"></div>
+      </div>
+      <div id="plate_nav">
+        <div class="nav_top">
+          <div
+            class="event_gnb type_clear"
+            style="
+              --75824c3e: rgba(27, 30, 34, 1);
+              --47759c69: rgba(255, 255, 255, 1);
+              --028dbcb1: rgba(122, 99, 67, 1);
+              --aa46ff86: rgba(0, 0, 0, 1);
+              --4fcf305d: rgba(255, 255, 255, 1);
+              --2c0e22cd: rgba(122, 99, 67, 0.05);
+            "
+          >
+            <div class="event_gnb_default">
+              <div class="event_gnb_default_wrap">
+                <div class="event_gnb_default_left">
+                  <button class="event_gnb_menu">
+                    <span></span>
+                  </button>
+                  <a
+                    href="https://warsofprasia.beanfun.com/Main"
+                    class="event_gnb_logo"
+                    target="_self"
+                  >
+                    <img src="img/icon/LOGO-tw.png" class="icon" />
+                    <img src="img/icon/LOGO.webp" class="mobile_icon" />
+                  </a>
+                </div>
+                <div class="event_gnb_default_right">
+                  <div class="event_gnb_gamestart">
+                    <button>GAME START</button>
+                  </div>
+                  <div class="event_gnb_links">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://warsofprasia.beanfun.com/Main"
+                          target="_self"
+                        >
+                          <i class="i--home -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/warsofprasia.tw"
+                          target="_self"
+                        >
+                          <i class="i--logo-fb -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/@user-warsofprasia"
+                          target="_self"
+                        >
+                          <i class="i--logo-youtube -box"></i>
+                          <span></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event_gnb_teleport"></div>
+          </div>
+          <div id="nav_top_teleport"></div>
+        </div>
+        <button class="gotop">
+          <i class="i--gotop"></i>
+        </button>
+        <div class="event_banner" style="--618ead0a: 95px">
+          <span class="event_banner_dimmed"></span>
+          <div class="event_banner_content" style="margin-top: 0px">
+            <div class="event_banner_menu">
+              <button class="event_banner_menu_button">
+                <span>活動</span>
+              </button>
+            </div>
+            <div class="event_banner_content_wrap">
+              <a
+                href="https://warsofprasia.beanfun.com/Main"
+                class="event_banner_home"
+                target="_self"
+              >
+                <div class="logo">
+                  <span></span>
+                  <img src="img/icon/LOGO-tw.png" class="visible_roomy" />
+                  <img src="img/icon/LOGO-tw.png" class="visible_mobile" />
+                </div>
+              </a>
+              <div class="event_banner_list">
+                <ul>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10634"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_01.jpg" />
+                      </div>
+                      <div class="content">直升30等</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10884"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_02.webp" />
+                      </div>
+                      <div class="content">波拉魂養成班</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10872"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_03.jpg" />
+                      </div>
+                      <div class="content">特別 WP Coupon</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10431"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_04.jpg" />
+                      </div>
+                      <div class="content">10% 紅利回饋</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://tw.hicdn.beanfun.com/beanfun/promo/TWP/20240108J-2/index.html"
+                      class="event_banner_item"
+                      target="_self"
+                    >
+                      <div class="image">
+                        <img src="img/icon/banner_05.jpg" />
+                      </div>
+                      <div class="content">EP3 生死一瞬</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="event_banner_store">
+                <a
+                  href="https://play.google.com/store/apps/details?hl=zh-TW&id=com.gamania.twp&referrer=adjust_reftag%3Dc1yWGEH0cDaIG%26utm_source%3D%25E6%25AD%25A3%25E5%25BC%258F%25E5%25AE%2598%25E7%25B6%25B2_AOS"
+                  target="_self"
+                >
+                  <img
+                    src="img/icon/btn-download-gp.png"
+                    alt="Google Play下載"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/tw/app/%E6%B3%A2%E6%8B%89%E8%A5%BF%E4%BA%9E%E6%88%B0%E8%A8%98/id6451229143"
+                  target="_self"
+                >
+                  <img
+                    src="img/icon/btn-download-as.png"
+                    alt="Apple Store下載"
+                  />
+                </a>
+                <a
+                  href="https://warsofprasia.beanfun.com/Download?downloadTarget=1"
+                  target="_self"
+                >
+                  <img src="img/icon/btn-download-pc.png" alt="PC下載" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="plate_page"
+        style="--72516594: 0px; --9617c380: 0px; --cfc4fde0: 0px"
+      >
+        <div class="page_events_sunkeeper">
+          <div class="particles" style="opacity: 1">
+            <div id="particle-snow"></div>
+          </div>
+          <nav class="nav_side">
+            <div>
+              <ol>
+                <li class="depth_1">
+                  <button class="page_p1">混沌首領：白夜之王</button>
+                </li>
+                <li class="depth_2">
+                  <button class="page_p2">狼 圖騰獸的復活</button>
+                </li>
+                <li class="depth_2">
+                  <button class="page_p3">充滿憎恨的嚎叫</button>
+                </li>
+                <li class="depth_2">
+                  <button class="page_p4">倒塌的聖所</button>
+                </li>
+                <li class="depth_2">
+                  <button class="page_p5">暗月要塞</button>
+                </li>
+                <li class="depth_2">
+                  <button class="page_p6">STORY&佔領福利</button>
+                </li>
+              </ol>
+            </div>
+          </nav>
+          <div class="section-pages swiper-container">
+            <div class="page-group swiper-wrapper">
+              <div
+                class="swiper-slide swiper-slide-page"
+                data-title="混沌首領：白夜之王"
+              >
+                <section class="section--hero area">
+                  <div class="area__visual">
+                    <span class="_dimmed"></span>
+                    <video loop autoplay muted playsinline id="page1Video">
+                      <source id="video1Source" />
+                    </video>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_eptitle">EPISODE 3: 결사적 순간</div>
+                        <p class="_subtitle">고대엘프 최종병기</p>
+                        <h2 class="_title">
+                          에테르 거신
+                          <div class="_title-text"></div>
+                          <div class="_title-light"></div>
+                          <div class="_title-shadow"></div>
+                        </h2>
+                      </div>
+                      <div class="_detail">
+                        <div class="_period">
+                          <span></span>
+                          <p>2024.02.21(수) UPDATE</p>
+                          <span></span>
+                        </div>
+                        <button class="video-button">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span> 영상 보기
+                        </button>
+                      </div>
+                      <button class="_scroll">SCROLL DOWN</button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="狼 圖騰獸的復活"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section--change area">
+                  <div class="area__visual">
+                    <div class="_bg"></div>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_subtitle">시간틈바귀</div>
+                        <h3 class="_title">달라진 규칙, 시즌4</h3>
+                      </div>
+                      <div class="_detail">
+                        <div class="_explain">
+                          <p>
+                            매칭 그룹 간의 다이나믹한 재미를 드리기 위해
+                            <br />
+                            기존과 달라진 규칙으로 시간틈바귀가 운영됩니다.
+                            <br /><br />
+                            ‘4차 렐름 이전: 전반기‘ 이후 시간틈바귀가 진행되는
+                            동안 <br />시간틈바귀 매칭 그룹은 전반기, 후반기로
+                            나누어 총 2번 매칭되며,
+                            <br />
+                            매칭된 그룹 내에서 각각 다른 세력구도로 만나게
+                            됩니다. <br /><br />
+                            예로, 론도, 엘렌 월드 매칭 그룹이 전반기에는 아래
+                            형태로 한 그룹이 되어 만나게 됩니다.
+                          </p>
+                          <div class="_ex _ex1">
+                            예시) 그룹1-1. 론도 1,2,3 / 엘렌 1,2 | 그룹 1-2.
+                            론도 4,5 / 엘렌 4,5
+                          </div>
+                          <p>
+                            후반기가 시작되기 전 추가 렐름 이전 기간이
+                            있으며,<br />기간 종료 후 월드 내 모든 렐름이 맞붙는
+                            구조로 후반기가 진행됩니다.
+                          </p>
+                          <div class="_ex _ex2">
+                            예시) 그룹 1. 론도 1,2,3,4,5 | 엘렌1,2,4,5
+                          </div>
+                          <p>
+                            페넬로페 월드에서는 시간틈바귀 프리 시즌이
+                            진행됩니다.
+                          </p>
+                        </div>
+                        <div class="_season">
+                          시간틈바귀 시즌4 매칭 그룹 <br />
+                          전반기: 2024년 2월7일(수) 점검 후 ~ 3월6일(수) 점검 전
+                          '4차 렐름 이전: 후반기' 진행 * 이전 가능 렐름은 '4차
+                          렐름 이전: 전반기' 그룹과 동일합니다.
+                          <br />
+                          후반기: 2024년 3월 6일(수) 점검 후 ~ 3월 27일(수) 점검
+                          전
+                        </div>
+                      </div>
+                      <div class="_link">
+                        <a
+                          href="/news/gm/2473151"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          class="more-button"
+                        >
+                          자세히 보기
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="充滿憎恨的嚎叫"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section--castle area">
+                  <div class="area__visual">
+                    <span class="_dimmed"></span>
+                    <video loop autoplay muted playsinline id="page3Video">
+                      <source id="video3Source" />
+                    </video>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_subtitle">시간틈바귀 3지역</div>
+                        <h3 class="_title">망각의 고성</h3>
+                        <p class="_description">
+                          시간틈바귀 깊은 곳에 위치한 망각의 고성은 원래 크론
+                          연방의 성채였다. <br />그러나 네소엘프들이
+                          시간틈바귀를 빛의 경계로 봉인했을 때,
+                          <br class="visible--mobile" />
+                          고대엘프들과 함께 갇히고 말았다.
+                          <br /><br />
+                          고대엘프들은 크론 연방 주민들을 학살한 뒤, 성채의 새
+                          주인이 되었다. <br />그리고 네소엘프를 향한 복수심을
+                          불태우며,
+                          <br class="visible--mobile" />
+                          서리대장간에서 궁극의 병기를 만들기 시작했다.
+                        </p>
+                      </div>
+                      <div class="_detail">
+                        <div class="_map"></div>
+                        <div class="_info">
+                          업데이트 내용 <br />
+                          9개의 신규 사냥터와 1개의 마을
+                          <br />"다시 시간틈바귀로"퀘스트로 시작되는 신규
+                          에피소드 <br />신규 드랍 장비 추가 및 기억회복 추가
+                          <br />신규 이동 아이템 추가: 망각의 고성 이동목,
+                          망각의 고성 고급 이동목, 망각의 고성 수호부적 <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="倒塌的聖所"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section--colossus area">
+                  <div class="area__visual">
+                    <div class="_bg"></div>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_subtitle">
+                          세계의 경계마저 허물 고대엘프 최종병기
+                        </div>
+                        <h3 class="_title">에테르 거신</h3>
+                      </div>
+                      <div class="_detail">
+                        <div class="_portrait">
+                          <span></span>
+                        </div>
+                        <div class="_info">
+                          <div class="_rune">
+                            <i class="i--prasia--a"></i
+                            ><i class="i--prasia--e"></i
+                            ><i class="i--prasia--t"></i
+                            ><i class="i--prasia--h"></i
+                            ><i class="i--prasia--e"></i
+                            ><i class="i--prasia--r"></i>
+                            &nbsp; &nbsp;
+                            <i class="i--prasia--c"></i
+                            ><i class="i--prasia--o"></i
+                            ><i class="i--prasia--l"></i
+                            ><i class="i--prasia--o"></i
+                            ><i class="i--prasia--s"></i
+                            ><i class="i--prasia--s"></i
+                            ><i class="i--prasia--u"></i
+                            ><i class="i--prasia--s"></i>
+                          </div>
+                          <p class="_description">
+                            고대엘프들이 집념과 원한을 담아 제작한 궁극의 전투
+                            병기.<br />빛의 경계를 부수고, 네소엘프에 대적하기
+                            위해 만들었다. <br />그러나 기동하기 위해서는 강력한
+                            스탠더의 얽힘이 필요했고,<br />거신은 고성 깊은 곳에
+                            오랜 세월 잠들어 있었다.<br />
+                            그리고 지금, 마지막 부품이 서리대장간에 도착했다.
+                          </p>
+                          <div class="_table">
+                            에테르 거신 정보 <br />
+                            이름: 에테르 거신 <br />
+                            신장: 5M <br />
+                            이동형태/속도: 이족보행(대형) / 보통
+                            <br />
+                            종족/성별: 스탠더를 소체로 하는 고대엘프 전투병기
+                            <br />
+                            공격 타입: 물리/얽힘마법 병용
+                            <br />
+                            공격 무기: 전투 망치, 마력 대포
+                            <br />
+                            출몰 지역: 시간틈바귀 3지역 거신의 회당
+                            <br />
+                            보상: 전설 무기 파편, 압제자 세트 파편, 전설 아퀴룬
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div data-title="暗月要塞" class="swiper-slide swiper-slide-page">
+                <section class="section--enforce area">
+                  <div class="area__visual">
+                    <div class="_bg"></div>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_subtitle">침식 구간 확정 강화 혜택</div>
+                        <h3 class="_title">확정 강화</h3>
+                        <p class="_description">
+                          강화 진행 시 일정 횟수만큼 침식이 발생하면,<br
+                            class="visible--mobile"
+                          />다음 강화 시 해당 단계를 100% 확정 강화합니다.
+                          <br /><br />
+                          침식 발생 횟수는 단계별로 따로 누적되며,<br
+                            class="visible--mobile"
+                          />누적된 침식 발생 횟수는 확정 강화 시 초기화됩니다.
+                          <br />거래로 소유권이 이전되는 경우도 누적된 침식 발생
+                          횟수는 초기화됩니다.
+                        </p>
+                      </div>
+                      <div class="_detail"></div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div
+                data-title="STORY&佔領福利"
+                class="swiper-slide swiper-slide-page"
+              >
+                <section class="section--figure area">
+                  <div id="particles-1"></div>
+                  <div class="area__visual">
+                    <div class="_bg"></div>
+                    <div class="_dust"></div>
+                  </div>
+                  <div class="area__content">
+                    <div class="area__content__wrap">
+                      <div class="_header">
+                        <div class="_subtitle">신규 신화 형상</div>
+                        <h3 class="_title">타오르는 석양의 화신</h3>
+                        <p class="_description">
+                          스탠더님의 여정을 함께 할 새로운 신화 형상, ‘타오르는
+                          석양의 화신’. <br />공격과 방어 각각 균형적인 형태로
+                          특화되어 있습니다. <br />함께 추가되는 전설 3종, 영웅
+                          3종, 희귀 2종 형상도 게임에서 확인해주세요.
+                        </p>
+                        <div class="_detail">
+                          <div class="_portrait">
+                            <span></span><span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
