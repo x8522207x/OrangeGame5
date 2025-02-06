@@ -86,10 +86,11 @@ $(document).ready(() => {
             freeMode: false,
             noSwiping: true,
             noSwipingSelector: 'button',
-            autoHeight: true,
+            autoHeight: false,
             speed: 1000,
             slidesPerView: 1,
             spaceBetween: 0,
+            watchSlidesProgress: true,
             allowTouchMove: false,
             on: {
                 init: (swiper) => {
@@ -133,6 +134,7 @@ $(document).ready(() => {
                     $('.swiper-slide-page')[swiper.realIndex].classList.add('scrollable');
                     $('.depth_1')[swiper.realIndex].classList.add('active');
                     $('.depth_1')[swiper.realIndex].classList.add('point');
+                    
                     if (swiper.realIndex !== 0) {
                         $('.gotop').addClass('show');
                     }
