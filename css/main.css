@@ -1373,6 +1373,10 @@ button {
 }
 
 @media (min-width: 769px) {
+    .visible_mobile {
+        display: none !important;
+    }
+
     .event_gnb {
         width: 100%;
     }
@@ -1441,6 +1445,10 @@ button {
 }
 
 @media (max-width: 768px) {
+    .visible_roomy {
+        display: none !important;
+    }
+
     #plate_base {
         display: none;
     }

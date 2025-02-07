@@ -26,6 +26,10 @@ $(document).ready(() => {
         $('.youtube--2').remove();
     });
 
+    $('.video_button').on('click', () => {
+        openVideo('KlUc3H5OsJo');
+    });
+
     let pcSwiperPage, mobileSwiperPage;
 
     function tabletTouchMove(swiper) {
@@ -107,6 +111,11 @@ $(document).ready(() => {
                             slide.scrollTop = 0;
                         })
                     });
+
+                    $('.scroll').on('click', () => {
+                        swiper.slideTo(1);
+                    });
+
                     $('.UNI-footer').css('display', 'none');
 
                     document.querySelectorAll('.swiper-slide-page').forEach(node => {
@@ -134,7 +143,7 @@ $(document).ready(() => {
                     $('.swiper-slide-page')[swiper.realIndex].classList.add('scrollable');
                     $('.depth_1')[swiper.realIndex].classList.add('active');
                     $('.depth_1')[swiper.realIndex].classList.add('point');
-                    
+
                     if (swiper.realIndex !== 0) {
                         $('.gotop').addClass('show');
                     }
@@ -181,6 +190,10 @@ $(document).ready(() => {
                         swiper.slideTo(0);
                     });
 
+                    $('.scroll').on('click', () => {
+                        swiper.slideTo(1);
+                    });
+
                     $('.UNI-footer').css('display', 'none');
                 },
                 slideChange: (swiper) => {
@@ -198,24 +211,17 @@ $(document).ready(() => {
         });
     };
 
-
     const p1video = document.getElementById("page1Video");
     const p1source = document.getElementById("video1Source");
-    const p3video = document.getElementById("page3Video");
-    const p3source = document.getElementById("video3Source");
     if ($(window).width() > 768) {
-        p1source.src = "img/page1/p1_bg.mp4";
+        p1source.src = "img/page1/p1_bg.webm";
         p1video.load();
-        p3source.src = "img/page3/p3_bg.mp4";
-        p3video.load();
         $('.event_gnb').addClass('type_clear');
         $('.event_gnb').removeClass('type_default');
         pcSwiper();
     } else {
-        p1source.src = "img/page1/p1_bg_m.mp4";
+        p1source.src = "img/page1/p1_bg_m.webm";
         p1video.load();
-        p3source.src = "img/page3/p3_bg_m.mp4";
-        p3video.load();
         $('.event_gnb').addClass('type_default');
         $('.event_gnb').removeClass('type_clear');
         mobileSwiper();
@@ -231,10 +237,8 @@ $(document).ready(() => {
             if (mobileSwiperPage) {
                 mobileSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
                 mobileSwiperPage = null; // 重置為 null
-                p1source.src = "img/page1/p1_bg.mp4";
+                p1source.src = "img/page1/p1_bg.webm";
                 p1video.load();
-                p3source.src = "img/page3/p3_bg.mp4";
-                p3video.load();
             }
 
             if (pcSwiperPage) {
@@ -244,10 +248,8 @@ $(document).ready(() => {
             }
         } else {
             if (pcSwiperPage) {
-                p1source.src = "img/page1/p1_bg_m.mp4";
+                p1source.src = "img/page1/p1_bg_m.webm";
                 p1video.load();
-                p3source.src = "img/page3/p3_bg_m.mp4";
-                p3video.load();
                 pcSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
                 pcSwiperPage = null; // 重置為 null
                 document.querySelectorAll('.swiper-slide-page').forEach(node => {

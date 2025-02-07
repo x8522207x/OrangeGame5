@@ -157,7 +157,7 @@
 
 .fullpage-section>.swiper-wrapper {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -165,7 +165,8 @@
 }
 
 .fullpage-section>.swiper-wrapper>.swiper-slide.scrollable {
-    overflow-y: overlay;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .fullpage-section>.swiper-wrapper>.swiper-slide-active {
@@ -567,7 +568,8 @@ section.area .visual video {
     object-fit: cover;
     object-position: center;
     vertical-align: top;
-    width: 100%
+    width: 100%;
+    filter: brightness(30%);
 }
 
 section.area .visual .bg {
@@ -579,14 +581,15 @@ section.area .visual .bg {
     width: 100%
 }
 
-section.area .visual .dimmed {
+/* section.area .visual .dimmed {
     background-color: #000000b3;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%
-}
+    width: 100%;
+    transform: translateZ(0);
+} */
 
 section.area .content {
     align-items: center;
@@ -651,7 +654,8 @@ section.area .header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: WarsOfPrasia, serif
+    font-family: WarsOfPrasia, serif;
+    transform: translateZ(0);
 }
 
 section.area .header .subtitle {
@@ -749,12 +753,6 @@ section.area p {
         height: var(--maxvh-without-navtop)
     }
 }
-
-/* @media (min-width: 769px) {
-    .section_hero .content {
-        margin-bottom: -120px
-    }
-} */
 
 .section_hero .content .content_wrap .header {
     align-items: center;
@@ -1016,7 +1014,7 @@ section.area p {
 
 @media (min-width: 769px) {
     .section_change .visual .bg {
-        background-image: url(../img/page2/p2_bg.jpg);
+        background-image: url(../img/page2/p2_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1025,7 +1023,7 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_change .visual .bg {
-        background-image: url(../img/page2/p2_bg_m.jpg);
+        background-image: url(../img/page2/p2_bg_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1047,6 +1045,13 @@ section.area p {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_change .content .detail {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .section_change .content .detail .ex {
     color: #0000 !important;
     font-size: 0 !important;
@@ -1065,7 +1070,8 @@ section.area p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center
+    text-align: center;
+    transform: translateZ(0);
 }
 
 .section_change .content .detail .explain .ex1 {
@@ -1101,7 +1107,7 @@ section.area p {
 }
 
 .section_change .content .detail .season {
-    background-image: url(../img/page2/p2_ex3.png);
+    background-image: url(../img/page2/p2_ex3.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1116,7 +1122,8 @@ section.area p {
 @media (max-width: 768px) {
     .section_change .content .detail .season {
         height: 269px;
-        width: 223px
+        width: 223px;
+        transform: translateZ(0);
     }
 }
 
@@ -1126,7 +1133,8 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_change .content .link {
-        margin-top: 35px
+        margin-top: 35px;
+        transform: translateZ(0);
     }
 }
 
@@ -1135,9 +1143,20 @@ section.area p {
     display: flex
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_castle .content .detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_castle .content .detail .info {
+        margin-top: -140px;
+    }
+}
+
 @media (min-width: 769px) {
     .section_castle .content .detail {
-        margin-bottom: -170px;
+        /* margin-bottom: -170px; */
         margin-top: -80px
     }
 }
@@ -1164,11 +1183,19 @@ section.area p {
         margin-left: -400px;
         margin-right: -250px
     }
+
+    .section_castle .visual .bg {
+        background-image: url(../img/page3/p3_bg.webp);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(30%);
+    }
 }
 
 @media (max-width: 768px) {
     .section_castle .content .detail .map {
-        background-image: url(../img/page3/p3_map.png);
+        background-image: url(../img/page3/p3_map_m.png);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1197,11 +1224,19 @@ section.area p {
         height: 238px;
         width: 256px
     }
+
+    .section_castle .visual .bg {
+        background-image: url(../img/page3/p3_bg_m.webp);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(30%);
+    }
 }
 
 @media (min-width: 769px) {
     .section_colossus .visual .bg {
-        background-image: url(../img/page4/p4_bg.jpg);
+        background-image: url(../img/page4/p4_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1210,7 +1245,7 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_colossus .visual .bg {
-        background-image: url(../img/page4/p4_bg_m.jpg);
+        background-image: url(../img/page4/p4_bg_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1232,6 +1267,13 @@ section.area p {
     z-index: 0
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .section_colossus .content .detail {
         flex-direction: column;
@@ -1245,17 +1287,27 @@ section.area p {
     top: -30px
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail .portrait {
+        left: 50%;
+        right: unset;
+        top: 155px;
+        transform: translate3d(-66%, 0, 0);
+    }
+}
+
 @media (max-width: 768px) {
     .section_colossus .content .detail .portrait {
         left: 50%;
         right: unset;
         top: 120px;
-        transform: translate3d(-66%, 0, 0)
+        transform: translate3d(-66%, 0, 0);
+        z-index: -1;
     }
 }
 
 .section_colossus .content .detail .portrait>span {
-    background-image: url(../img/page4/p4_portrait.png);
+    background-image: url(../img/page4/p4_portrait.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1293,13 +1345,23 @@ section.area p {
     margin-left: auto;
     position: relative;
     width: 586px;
-    z-index: 10
+    z-index: 10;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail .info {
+        margin-left: unset;
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 768px) {
     .section_colossus .content .detail .info {
         margin-left: unset;
-        pointer-events: none
+        pointer-events: none;
+        will-change: transform;
+        transform: translateZ(0);
+        z-index: 9999;
     }
 }
 
@@ -1308,6 +1370,12 @@ section.area p {
     grid-gap: 1px;
     align-items: center;
     z-index: -1
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail .info .rune {
+        grid-gap: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1335,6 +1403,12 @@ section.area p {
     text-align: center
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail .info .description {
+        margin-top: 9px;
+    }
+}
+
 @media (max-width: 768px) {
     .section_colossus .content .detail .info .description {
         margin-top: 9px
@@ -1342,7 +1416,7 @@ section.area p {
 }
 
 .section_colossus .content .detail .info .table {
-    background-image: url(../img/page4/p4_table.png);
+    background-image: url(../img/page4/p4_table.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1355,11 +1429,22 @@ section.area p {
     -webkit-text-size-adjust: none
 }
 
+@media (min-width: 769px) and (max-width: 1280px) {
+    .section_colossus .content .detail .info .table {
+        height: 501px;
+        margin-top: 400px;
+        width: 492px;
+    }
+}
+
 @media (max-width: 768px) {
     .section_colossus .content .detail .info .table {
         height: 319px;
         margin-top: 260px;
-        width: 313px
+        width: 313px;
+        will-change: transform;
+        transform: translateZ(0);
+        z-index: 9999;
     }
 }
 
@@ -1382,7 +1467,7 @@ section.area p {
 }
 
 .section_enforce .content .detail {
-    background-image: url(../img/page5/p5_content.png);
+    background-image: url(../img/page5/p5_content.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1528,7 +1613,7 @@ section.area p {
 }
 
 .section_figure .content .detail .portrait>span:first-child:before {
-    background-image: url(../img/page6/p6_figure1.png);
+    background-image: url(../img/page6/p6_figure1.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain
@@ -1549,7 +1634,7 @@ section.area p {
 
 .section_figure .content .detail .portrait>span:nth-child(2):before {
     animation-delay: .81s;
-    background-image: url(../img/page6/p6_figure2.png);
+    background-image: url(../img/page6/p6_figure2.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain
