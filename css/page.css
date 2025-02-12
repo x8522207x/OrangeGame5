@@ -329,7 +329,7 @@
     box-sizing: border-box;
     color: #c9c9c980;
     display: flex;
-    font-family: Hahmlet, sans-serif;
+    font-family: "Noto Serif TC", serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -654,7 +654,7 @@ section.area .header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: WarsOfPrasia, serif;
+    font-family: "Noto Serif TC", serif;
     transform: translateZ(0);
 }
 
@@ -665,7 +665,8 @@ section.area .header .subtitle {
     font-size: 25px;
     line-height: 1;
     white-space: nowrap;
-    grid-gap: 15px
+    grid-gap: 15px;
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -712,10 +713,11 @@ section.area .header h3.title {
     background-position: 50%;
     background-repeat: repeat;
     background-size: initial;
-    color: #0000;
+    color: #f3f0ed;
     font-size: 46px;
     line-height: 1;
-    margin-top: 18px
+    margin-top: 18px;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -738,10 +740,11 @@ section.area .header .description {
 
 section.area p {
     color: #c0cad0;
-    font-family: Hahmlet, sans-serif;
+    font-family: "Noto Serif TC", serif;
     font-size: 18px;
     font-style: normal;
-    letter-spacing: -.05em
+    letter-spacing: -.05em;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -790,7 +793,7 @@ section.area p {
     line-height: 1;
     margin-top: 36px;
     -webkit-text-fill-color: #0000;
-    font-family: Hahmlet, sans-serif;
+    font-family: "Noto Serif TC", serif;
     font-style: normal
 }
 
@@ -942,7 +945,7 @@ section.area p {
     background-size: contain;
     color: #0000;
     flex: 0 0 auto;
-    font-family: WarsOfPrasia, serif;
+    font-family: "Noto Serif TC", serif;
     font-size: 28px
 }
 
@@ -1079,8 +1082,8 @@ section.area p {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 86px;
-    width: 557px
+    height: 85px;
+    width: 625px
 }
 
 @media (max-width: 768px) {
@@ -1096,7 +1099,7 @@ section.area p {
     background-repeat: no-repeat;
     background-size: contain;
     height: 49px;
-    width: 623px
+    width: 652px
 }
 
 @media (max-width: 768px) {
@@ -1115,7 +1118,7 @@ section.area p {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
     font-size: 0 !important;
     height: 486px;
-    width: 403px;
+    width: 404px;
     -webkit-text-size-adjust: none
 }
 
