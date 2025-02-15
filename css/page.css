@@ -520,8 +520,8 @@
 
 @media (max-width: 768px) {
     .more_button {
-        height: 39px;
-        width: 156px
+        height: 32px;
+        width: 138px
     }
 }
 
@@ -771,15 +771,15 @@ section.area p {
     background-size: contain;
     color: #0000 !important;
     font-size: 0 !important;
-    height: 95px;
-    width: 251px;
+    height: 94px;
+    width: 231px;
     -webkit-text-size-adjust: none
 }
 
 @media (max-width: 768px) {
     .section_hero .content .content_wrap .header .eptitle {
-        height: 56px;
-        width: 148px
+        height: 47px;
+        width: 115px
     }
 }
 
@@ -787,8 +787,8 @@ section.area p {
     background: linear-gradient(0deg, #3f392f, #d1bd9c);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 36px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 400;
     letter-spacing: 4px;
     line-height: 1;
     margin-top: 36px;
@@ -812,18 +812,18 @@ section.area p {
 .section_hero .content .content_wrap .header .title {
     color: #0000 !important;
     font-size: 0 !important;
-    height: 109px;
+    height: 148px;
     margin-top: 18px;
     position: relative;
-    width: 515px;
+    width: 509px;
     -webkit-text-size-adjust: none
 }
 
 @media (max-width: 768px) {
     .section_hero .content .content_wrap .header .title {
-        height: 63px;
+        height: 74px;
         margin-top: 14px;
-        width: 302px
+        width: 255px
     }
 }
 
@@ -874,7 +874,7 @@ section.area p {
     z-index: 2
 }
 
-.section_hero .content .content_wrap .header .title .title_shadow {
+/* .section_hero .content .content_wrap .header .title .title_shadow {
     background-image: url(../img/page1/p1_title_shadow.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -887,14 +887,14 @@ section.area p {
     top: 3px;
     width: 100%;
     z-index: -1
-}
+} */
 
 .section_hero .content .content_wrap .header .title .title_light {
     height: 148px;
-    left: -10%;
-    mix-blend-mode: color-dodge;
+    left: 0%;
+    /* mix-blend-mode: color-dodge; */
     position: absolute;
-    top: -24%;
+    top: -10%;
     width: 148px;
     z-index: 3
 }
@@ -1088,8 +1088,8 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_change .content .detail .explain .ex1 {
-        height: 47px;
-        width: 309px
+        height: 42px;
+        width: 326px
     }
 }
 
@@ -1104,8 +1104,8 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_change .content .detail .explain .ex2 {
-        height: 27px;
-        width: 346px
+        height: 24px;
+        width: 326px
     }
 }
 
@@ -1124,8 +1124,8 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_change .content .detail .season {
-        height: 269px;
-        width: 223px;
+        height: 243px;
+        width: 202px;
         transform: translateZ(0);
     }
 }
@@ -1153,14 +1153,18 @@ section.area p {
     }
 
     .section_castle .content .detail .info {
-        margin-top: -140px;
+        margin-top: 10px !important;
+    }
+
+    .section_castle .content .detail .map {
+        margin-left: -265px !important;
     }
 }
 
 @media (min-width: 769px) {
     .section_castle .content .detail {
         /* margin-bottom: -170px; */
-        margin-top: -80px
+        margin-top: -50px
     }
 }
 
@@ -1171,14 +1175,14 @@ section.area p {
 }
 
 .section_castle .content .detail .map {
-    height: 836px;
-    width: 1254px;
+    height: 605px;
+    width: 1094px;
     z-index: -1
 }
 
 @media (min-width: 769px) {
     .section_castle .content .detail .map {
-        background-image: url(../img/page3/p3_map.png);
+        background-image: url(../img/page3/p3_map.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1198,34 +1202,36 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_castle .content .detail .map {
-        background-image: url(../img/page3/p3_map_m.png);
+        background-image: url(../img/page3/p3_map_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 418px;
+        height: 393px;
         margin-bottom: -50px;
-        margin-left: -41px;
-        margin-top: -40px;
-        width: 627px
+        margin-left: 15px;
+        margin-top: -30px;
+        width: 563px;
     }
 }
 
 .section_castle .content .detail .info {
-    background-image: url(../img/page3/p3_info.png);
+    background-image: url(../img/page3/p3_info.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
     color: #0000 !important;
     font-size: 0 !important;
-    height: 432px;
-    width: 431px;
-    -webkit-text-size-adjust: none
+    margin-top: 115px;
+    height: 458px;
+    width: 455px;
+    -webkit-text-size-adjust: none;
 }
 
 @media (max-width: 768px) {
     .section_castle .content .detail .info {
-        height: 238px;
-        width: 256px
+        height: 229px;
+        width: 227px;
+        margin-top: 0px !important;
     }
 
     .section_castle .visual .bg {
@@ -1426,9 +1432,9 @@ section.area p {
     color: #0000 !important;
     filter: drop-shadow(0 5px 20px rgba(0, 0, 0, .4));
     font-size: 0 !important;
-    height: 501px;
+    height: 540px;
     margin-top: 33px;
-    width: 492px;
+    width: 522px;
     -webkit-text-size-adjust: none
 }
 
@@ -1442,9 +1448,9 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_colossus .content .detail .info .table {
-        height: 319px;
+        height: 270px;
         margin-top: 260px;
-        width: 313px;
+        width: 261px;
         will-change: transform;
         transform: translateZ(0);
         z-index: 9999;
@@ -1453,7 +1459,7 @@ section.area p {
 
 @media (min-width: 769px) {
     .section_enforce .visual .bg {
-        background-image: url(../img/page5/p5_bg.jpg);
+        background-image: url(../img/page5/p5_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1462,7 +1468,7 @@ section.area p {
 
 @media (max-width: 768px) {
     .section_enforce .visual .bg {
-        background-image: url(../img/page5/p5_bg_m.jpg);
+        background-image: url(../img/page5/p5_bg_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -1514,7 +1520,7 @@ section.area p {
 
 @media (min-width: 769px) {
     .section_figure .visual .bg {
-        background-image: url(../img/page6/p6_bg.jpg);
+        background-image: url(../img/page6/p6_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
