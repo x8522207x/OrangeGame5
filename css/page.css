@@ -946,12 +946,14 @@ section.area p {
     color: #0000;
     flex: 0 0 auto;
     font-family: "Noto Serif TC", serif;
-    font-size: 28px
+    font-size: 28px;
+    width: 335px;
 }
 
 @media (max-width: 768px) {
     .section_hero .content .content_wrap .detail .period>p {
-        font-size: 17px
+        font-size: 17px;
+        width: 167px;
     }
 }
 
