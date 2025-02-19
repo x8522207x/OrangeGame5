@@ -148,7 +148,7 @@ $(document).ready(() => {
                         $('.gotop').addClass('show');
                     }
 
-                    if (swiper.realIndex === 5) {
+                    if (swiper.realIndex === 4) {
                         $('.UNI-footer').css('display', 'block');
                     }
                 },
@@ -203,7 +203,7 @@ $(document).ready(() => {
                         $('.gotop').addClass('show');
                     }
 
-                    if (swiper.realIndex === 5) {
+                    if (swiper.realIndex === 4) {
                         $('.UNI-footer').css('display', 'block');
                     }
                 }

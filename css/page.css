@@ -1459,42 +1459,6 @@ section.area p {
     }
 }
 
-@media (min-width: 769px) {
-    .section_enforce .visual .bg {
-        background-image: url(../img/page5/p5_bg.webp);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover
-    }
-}
-
-@media (max-width: 768px) {
-    .section_enforce .visual .bg {
-        background-image: url(../img/page5/p5_bg_m.webp);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: cover
-    }
-}
-
-.section_enforce .content .detail {
-    background-image: url(../img/page5/p5_content.webp);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 445px;
-    margin-top: 40px;
-    width: 786px
-}
-
-@media (max-width: 768px) {
-    .section_enforce .content .detail {
-        height: 183px;
-        margin-top: 27px;
-        width: 325px
-    }
-}
-
 .section_figure #particles_1 {
     box-sizing: border-box;
     display: inline-flex;
