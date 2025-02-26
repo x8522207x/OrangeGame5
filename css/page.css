@@ -1121,16 +1121,16 @@ section.area p {
     color: #0000 !important;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
     font-size: 0 !important;
-    height: 486px;
-    width: 404px;
+    height: 422px;
+    width: 430px;
     -webkit-text-size-adjust: none
 }
 
 @media (max-width: 768px) {
     .section_change .content .detail .season {
         background-image: url(../img/page2/p2_ex3_m.webp);
-        height: 448px;
-        width: 372px;
+        height: 361.5px;
+        width: 352.5px;
         transform: translateZ(0);
     }
 }
