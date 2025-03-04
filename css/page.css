@@ -1080,36 +1080,19 @@ section.area p {
 }
 
 .section_change .content .detail .explain .ex1 {
-    background-image: url(../img/page2/p2_ex1.png);
+    background-image: url(../img/page2/p2_ex1.webp);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 85px;
-    width: 652px
+    height: 138px;
+    width: 622px
 }
 
 @media (max-width: 768px) {
     .section_change .content .detail .explain .ex1 {
         background-image: url(../img/page2/p2_ex1_m.webp);
-        height: 64px;
-        width: 410px;
-    }
-}
-
-.section_change .content .detail .explain .ex2 {
-    background-image: url(../img/page2/p2_ex2.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 49px;
-    width: 652px
-}
-
-@media (max-width: 768px) {
-    .section_change .content .detail .explain .ex2 {
-        background-image: url(../img/page2/p2_ex2_m.webp);
-        height: 38px;
-        width: 410px;
+        height: 92px;
+        width: 416px;
     }
 }
 
@@ -1121,16 +1104,16 @@ section.area p {
     color: #0000 !important;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
     font-size: 0 !important;
-    height: 422px;
-    width: 430px;
+    height: 288px;
+    width: 404px;
     -webkit-text-size-adjust: none
 }
 
 @media (max-width: 768px) {
     .section_change .content .detail .season {
         background-image: url(../img/page2/p2_ex3_m.webp);
-        height: 361.5px;
-        width: 352.5px;
+        height: 204px;
+        width: 310px;
         transform: translateZ(0);
     }
 }
