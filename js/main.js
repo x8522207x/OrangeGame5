@@ -119,18 +119,7 @@ $(document).ready(() => {
                     $('.UNI-footer').css('display', 'none');
 
                     document.querySelectorAll('.swiper-slide-page').forEach(node => {
-                        if (node.children[0].classList.contains("section_spec")) {
-                            if ($(window).width() <= 1280) {
-                                node.addEventListener('touchmove', tabletTouchMoveHandler, { passive: true });
-                            }
-                        }
-
                         node.addEventListener('wheel', pcWheelHandler, { passive: true });
-
-                        if (!node.children[0].classList.contains("section_spec")) {
-                            node.addEventListener('touchmove', pcTouchMoveHandler, { passive: true });
-                        }
-
                         node.addEventListener('touchstart', pcTouchStart, { passive: true });
                     });
                 },
@@ -253,18 +242,7 @@ $(document).ready(() => {
                 pcSwiperPage.destroy(true, true); // 銷毀 Swiper 實例
                 pcSwiperPage = null; // 重置為 null
                 document.querySelectorAll('.swiper-slide-page').forEach(node => {
-                    if (node.children[0].classList.contains("section_spec")) {
-                        if ($(window).width() <= 1280) {
-                            node.removeEventListener('touchmove', tabletTouchMoveHandler, { passive: true });
-                        }
-                    }
-
                     node.removeEventListener('wheel', pcWheelHandler, { passive: true });
-
-                    if (!node.children[0].classList.contains("section_spec")) {
-                        node.removeEventListener('touchmove', pcTouchMoveHandler, { passive: true });
-                    }
-
                     node.removeEventListener('touchstart', pcTouchStart, { passive: true });
                 });
             }
